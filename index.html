@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            color: rgb(84, 54, 255);
+            font-weight: 800;
+            text-shadow: 2px 2px 5px rgb(92, 92, 170);
+        }
+
+        .me {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>assingment 6</h1>
+
+    <div class="me">
+        <button onclick="dhruv()"
+            style="color: blueviolet; background-color: aqua; border-radius :20px;padding: 10px;">PLAY</button>
+            </div>
+    <script>
+
+function dhruv(){
+var a,b,c;
+a=prompt("Here Comes ur turn! Give Me a Number of Two Digits");
+
+if(a>=10 && a<=99){
+
+for(b=0;b<5;b++){
+c=Math.random();
+document.write(Math.round(c*100),"</br>");
+if(a==Math.round(c*100)){
+document.write("Hehe I Won! Just In ",b,"th Turn");
+break;
+}
+if(b==4){
+document.write("You Won!I Coudn't Guess.");}
+}
+}
+
+else{
+document.write("Error! Enter A Two Digit Number!");}
+
+}
+
+    </script>
+
+</body>
+
+</html>
